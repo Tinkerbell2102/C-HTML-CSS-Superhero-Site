@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        align-items: end;
+    }
+
+        button:hover {
+            background-color: #45a049;
+        }
+</style>
+
+<div style="background-image: url('../../Images/blueban.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    ">
+    <h1 style="text-align: center">Contact us</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6" style=" padding-top: 5%">
+        <p style="text-align: center">
+            <img src="~/Images/callbatman.jpg" style="height: 350px; width: 400px; 100% 100%; border: 5px solid #000000" />
+            <br>
+        </p>
+        <p style="text-align: center">
+            <br>
+            Phone number: 0793176158<br>
+            Email: lkb01za@gmail.com<br>
+            Icas: 6955
+            <br>
+        </p>
+    </div>
+
+
+    <div class="col-md-6" style=" padding-top: 5%">
+        <div class="row">
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="City">City</label>
+                    <select id="City" name="City">
+                        <option value="Johannesburg">Johannesburg</option>
+                        <option value="Roodepoort">Roodepoort</option>
+                        <option value="Sandton">Sandton</option>
+                        <option value="Germiston">Germiston</option>
+                        <option value="Benoni">Benoni</option>
+                        <option value="Pretoria">Pretoria</option>
+                        <option value="Germiston">Germiston</option>
+                        <option value="Boksburg">Boksburg</option>
+                        <option value="Vereeniging">Vereeniging</option>
+                        <option value="Westonaria">Westonaria</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <p></p>
+                    <textarea id="subject" name="subject" placeholder="Write something.." 
+                              style="height:200px; width:100% ">
+                    </textarea>
+                    <p></p>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
